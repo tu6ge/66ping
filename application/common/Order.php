@@ -11,5 +11,7 @@ use think\Model;
 
 class Order extends Model
 {
-
+    protected $autoWriteTimestamp = 'datetime';
+    protected $createTime = 'createdTime';
+    protected $updateTime = '';
 }

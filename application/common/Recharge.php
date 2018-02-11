@@ -12,5 +12,7 @@ use think\Model;
 
 class Recharge extends Model
 {
-
+    protected $autoWriteTimestamp = 'datetime';
+    protected $createTime = 'createdTime';
+    protected $updateTime = '';
 }

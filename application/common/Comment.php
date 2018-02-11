@@ -12,5 +12,7 @@ use think\Model;
 
 class Comment extends Model
 {
-
+    protected $autoWriteTimestamp = 'datetime';
+    protected $createTime = 'createdTime';
+    protected $updateTime = '';
 }
