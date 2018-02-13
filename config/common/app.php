@@ -13,4 +13,14 @@ return [
         'domain'    => 'p42pl114h.bkt.clouddn.com',
         'bucket'    => '66ping',
     ],
+
+    'wechat' => [
+        'app_id'    => '',
+        'secret'    => '',
+        'token'     => '',
+        'log' => [
+            'level' => 'debug',
+            'file'  => '../runtime/easywechat/easywechat.log',
+        ],
+    ],
 ];
