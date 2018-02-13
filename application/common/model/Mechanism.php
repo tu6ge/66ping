@@ -1,15 +1,15 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 机构
  * User: Administrator
  * Date: 2018/2/10
- * Time: 15:33
+ * Time: 15:34
  */
-namespace app\common;
+namespace app\common\model;
 
 use think\Model;
 
-class FinanceRecord extends Model
+class Mechanism extends Model
 {
     protected $autoWriteTimestamp = 'datetime';
     protected $createTime = 'createdTime';

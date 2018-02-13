@@ -3,13 +3,13 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2018/2/10
- * Time: 15:35
+ * Time: 15:36
  */
-namespace app\common;
+namespace app\common\model;
 
 use think\Model;
 
-class Order extends Model
+class Withdrawal extends Model
 {
     protected $autoWriteTimestamp = 'datetime';
     protected $createTime = 'createdTime';

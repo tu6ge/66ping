@@ -1,6 +1,9 @@
 <?php
 namespace app\index\controller;
 
+use app\index\model\Picture;
+use think\facade\Url;
+
 class Index
 {
     /**
@@ -8,7 +11,7 @@ class Index
      */
     public function index()
     {
-
+        //echo Url::build('index/index/getPicToken');
     }
 
     /**
@@ -45,6 +48,13 @@ class Index
     {
 
     }
+    
+    public function getPicToken()
+    {
+        return json([
+            'token'=> Picture::init()->getToken(),
+        ]);
+    }
 
     /**
      * 提交评论
@@ -75,6 +85,14 @@ class Index
      * 提现申请页面
      */
     public function withdrawal()
+    {
+
+    }
+
+    /**
+     * 充值
+     */
+    public function recharge()
     {
 
     }

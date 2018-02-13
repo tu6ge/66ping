@@ -5,7 +5,7 @@
  * Date: 2018/2/10
  * Time: 15:29
  */
-namespace app\common;
+namespace app\common\model;
 
 use think\Model;
 
