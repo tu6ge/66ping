@@ -8,9 +8,9 @@
 
 return [
     'qiniu'=>[
-        'access_key'=> 'anbLgaTyQe8xaFkVrFvozOrVDHTVF-mYlSWybWPc',
-        'secret_key'=> 'jX7PX_5FrW9X1HrnCSuAuNEeNyVnoFjAFazPJUlS',
-        'domain'    => 'p42pl114h.bkt.clouddn.com',
+        'access_key'=> '',
+        'secret_key'=> '',
+        'domain'    => 'xxx.bkt.clouddn.com',
         'bucket'    => '66ping',
     ],
 
