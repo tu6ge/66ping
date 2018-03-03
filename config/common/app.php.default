@@ -1,0 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: tu6ge
+ * Date: 2018/2/13
+ * Time: 13:24
+ */
+
+return [
+    'qiniu'=>[
+        'access_key'=> '',
+        'secret_key'=> '',
+        'domain'    => 'xxx.bkt.clouddn.com',
+        'bucket'    => '66ping',
+    ],
+
+    'wechat' => [
+        'app_id'    => '',
+        'secret'    => '',
+        'token'     => '',
+        'log' => [
+            'level' => 'debug',
+            'file'  => '../runtime/easywechat/easywechat.log',
+        ],
+    ],
+];

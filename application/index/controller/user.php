@@ -32,4 +32,12 @@ class User
     {
 
     }
+
+    /**
+     * 充值
+     */
+    public function recharge()
+    {
+
+    }
 }

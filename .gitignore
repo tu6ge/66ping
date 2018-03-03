@@ -2,3 +2,5 @@
 composer.lock
 *.log
 thinkphp
+config/common/app.php
+!config/common/app.php.default
