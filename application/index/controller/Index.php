@@ -3,13 +3,12 @@ namespace app\index\controller;
 
 class Index
 {
+    /**
+     * 机构列表
+     */
     public function index()
     {
 
     }
 
-    public function hello($name = 'ThinkPHP5')
-    {
-        return 'hello,' . $name;
-    }
 }
