@@ -1,0 +1,29 @@
+{block name="page_title"}<title>小茄子聆听</title>{/block}
+{block name="content"}
+<div class="page js_show">
+    <div class="page__hd">
+        <h1 class="page__title">我的招牌</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells">
+            {foreach $list as $key=>$val}
+            <a class="weui-cell weui-cell_access" href="{:url('mechanism/detail',['id'=>$val->id])}">
+                <div class="weui-cell__bd">
+                    <span style="vertical-align: middle">{$val->name}</span>
+                    <span class="weui-badge" style="margin-left: 5px;">8</span>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            {/foreach}
+        </div>
+
+    </div>
+    <div class="weui-btn-area">
+        {if $can_add}
+        <a class="weui-btn weui-btn_primary" href="{:url('mechanism/add')}" >创建招牌</a>
+        {else /}
+        <a class="weui-btn weui-btn_primary weui-btn_disabled" disabled >最多{$Think.config.mechanism_max_count}个招牌</a>
+        {/if}
+    </div>
+</div>
+{/block}

@@ -1,0 +1,43 @@
+{block name="content"}
+<div class="page js_show">
+    <div class="page__hd">
+        <h1 class="page__title">添加招牌</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">招牌名</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" name="name" placeholder="请输入" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="weui-btn-area">
+        <button class="weui-btn weui-btn_primary" id="showTooltips">保存</button>
+    </div>
+</div>
+{/block}
+
+{block name="script"}
+<script>
+    $('#showTooltips').click(function(){
+        var name = $('[name=name]').val();
+        if(name==''){
+            $.toast("招牌名不能为空", "forbidden");
+            return false;
+        }
+        var that = this;
+        $(that).addClass('weui-btn_disabled').attr('disabled','disabled').html('正在保存...');
+        $.post("{:url('mechanism/add')}",{name:name},function (data) {
+            if(data.status==1){
+                location.href = '{:url("index/index")}';
+            }else{
+                $.toast(data.message, "forbidden");
+                $(that).removeClass('weui-btn_disabled').removeAttr('disabled').html('保存');
+            }
+        },'json');
+    });
+</script>
+{/block}

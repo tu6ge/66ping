@@ -1,0 +1,19 @@
+{block name='content'}
+<div class="page js_show">
+    <div class="page__hd">
+        <h1 class="page__title">{$info.name}</h1>
+    </div>
+    <div class="weui-msg">
+        <div class="weui-msg__icon-area">
+            <img src="../static/image/qrcode.jpg" alt="二维码" />
+        </div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">请多指教</h2>
+            <p class="weui-msg__desc">我们真诚的希望您能留下反馈信息，可以是建议也可以是批评</p>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="{:url('feedback/add',['id'=>$info->id])}" id="showTooltips">发表意见</a>
+    </div>
+</div>
+{/block}

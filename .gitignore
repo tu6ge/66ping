@@ -4,3 +4,5 @@ composer.lock
 thinkphp
 config/common/app.php
 !config/common/app.php.default
+config/database.php
+!config/database.php.default
