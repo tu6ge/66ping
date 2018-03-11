@@ -2,6 +2,7 @@
 composer.lock
 *.log
 thinkphp
+runtime
 config/common/app.php
 !config/common/app.php.default
 config/database.php
